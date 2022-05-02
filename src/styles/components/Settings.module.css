@@ -1,0 +1,16 @@
+.ctg-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.ctg-form-item {
+  width: 100%;
+  padding: var(--p1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--bclr1);
+  margin-top: var(--m);
+  background-color: var(--bg1);
+}

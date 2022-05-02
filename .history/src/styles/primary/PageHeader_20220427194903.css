@@ -1,0 +1,77 @@
+.header
+{
+  width: 100vw;
+  height: 69px;
+  border-bottom: 1px solid var(--bclr);
+  display: flex;
+  padding-left: var(--p);
+  padding-right: var(--p);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.App-page-wrapper
+{
+  width: 100%;
+  height: calc(100vh - 69px);
+  display: flex;
+}
+
+.navigation
+{
+  width: var(--whd);
+  height: 100%;
+  border-right: 1px solid var(--bclr);
+  overflow-y: auto;
+}
+
+.App-page {
+  width: var(--wpg);
+}
+
+.logo {
+  height: 100%;
+  width: 256px;
+  background-color: aqua;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.logo-h1 { font-size: 1.56rem; }
+.user-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 256px;
+}
+
+
+.navigation ul {
+  list-style: none;
+  list-style-position: inside;
+  padding-left: 0px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.navigation ul li {
+  width: 99%;
+  display: flex;
+  cursor: pointer;
+}
+
+.navigation ul li:hover {
+  background: var(--bg2);
+  border-top-right-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+
+.composer-button-wrapper {
+  width: 100%;
+  padding-top: var(--p);
+  padding-bottom: var(--p);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

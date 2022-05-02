@@ -1,0 +1,15 @@
+{
+  "name": "emailexplore",
+  "domain": "",
+  "doc_for_sapi_sapif": "sapi = server api, sapif = server api full with api and version",
+  "sapi": "http://localhost:3001",
+  "sapif": "http://localhost:3001/api/v1/",
+  "theme": [
+    "bg0", "bg1", "bg2", "clr", "clr1", "clr2", "h", "s", "bclr", 
+    "bclr1", "p", "p1", "p2", "m", "m1", "pr", "pr1", "pr2",
+    "pclr", "wp", "wh"],
+  "general": [
+    "logo", "title", "root_img", "root_title", 
+    "root_description", "login_img"
+  ]
+}

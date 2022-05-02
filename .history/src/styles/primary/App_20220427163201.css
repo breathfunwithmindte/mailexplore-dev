@@ -1,0 +1,17 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg1);
+}
+
+.App-in {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg1);
+}

@@ -1,0 +1,21 @@
+import { Avatar } from '@mui/material';
+import React from 'react';
+
+const EmailcardTemplate = ({ email }) => {
+  return (
+    <div className='email-card'>
+      <div style={{ width: "100px" }}>
+        <Avatar>MK</Avatar>
+        <strong>Some name</strong>
+      </div>
+      <div style={{ width: "calc(100% - 256px)" }}>
+        <p>{email.title}</p>
+      </div>
+      <div style={{ width: "156px" }}> 
+        some actions
+      </div>
+    </div>
+  );
+}
+
+export default EmailcardTemplate;

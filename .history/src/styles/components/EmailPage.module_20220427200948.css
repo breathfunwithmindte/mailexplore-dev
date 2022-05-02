@@ -1,0 +1,16 @@
+.emailpage {
+  width: 100%;
+  background-color: var(--bg0);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.email-section {
+  width: 100%;
+  height: 56px;
+  background-color: var(--bg1);
+  border-bottom: 1px solid var(--bclr);
+}
+
+.email-section

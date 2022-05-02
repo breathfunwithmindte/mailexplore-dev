@@ -1,0 +1,21 @@
+.Compose {
+  position: fixed;
+  bottom: 14px;
+  right: 14px;
+  width: 56vw;
+  height: fit-content;
+  background: var(--bg1);
+  border-radius: 14px;
+  box-shadow: 0px 1.4px 6.9px 0.14px var(--bclr);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 14;
+}
+
+.Compose-item {
+  padding: var(--p1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
