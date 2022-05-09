@@ -1,0 +1,42 @@
+.login-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+}
+
+.login-bg {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0; left: 0;
+  background: #141516;
+  background-image: url(https://pics.freeartbackgrounds.com/fullhd/Sea_Sunrise_Sky_and_Sea_Background-464.jpg);
+}
+
+.login-form {
+  position: relative;
+  width: clamp(369px, 56vw, 693px);
+  border: 2.3px solid rgba(0,0,0,0.97);
+  background-color: rgba(0,0,0,0.69);
+  padding: 2rem;
+  display: flex; flex-direction: column;
+  min-height: 492px;
+}
+
+@media(max-width: 693px)
+{
+  .login-form {
+    width: 100%;
+  }
+}
+
+@media(max-height: 693px)
+{
+  .login-container {
+    padding-top: 23;
+    align-items: flex-start;
+  }
+}

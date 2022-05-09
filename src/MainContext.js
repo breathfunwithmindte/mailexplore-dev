@@ -3,6 +3,7 @@ import { createTheme } from "@mui/material";
 import { createContext, useContext, useState, useEffect } from "react"
 import Request from "./bssl/Request";
 import Compose from "./components/Compose";
+import Login from "./pages/Login";
 
 const mainContext = createContext();
 
@@ -11,7 +12,7 @@ export const ContextProvider = ({children}) => {
   const [state, setState] = useState({});
   const [emails, setEmails] = useState([]);
   const [mui_theme, set_mui_theme] = useState(createTheme());
-  const [open_compose, setOpencompose] = useState(true);
+  const [open_compose, setOpencompose] = useState(false);
 
   useEffect(() => {
     (async () => {
@@ -41,7 +42,7 @@ export const ContextProvider = ({children}) => {
           state.user ? <div className="App" style={createStyle(state.project.theme)}>
             {children}
             {open_compose && (<Compose />)}
-          </div> : <p>login</p>
+          </div> : <Login />
         }
       </ThemeProvider>
     </mainContext.Provider>
