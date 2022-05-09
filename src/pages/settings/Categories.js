@@ -45,9 +45,9 @@ const Categories = () => {
           <Button onClick={handleAdd} variant="outlined" style={{textTransform: "none"}}>add more</Button>
           <Button variant="contained" style={{textTransform: "none"}}>SAVE</Button>
         </div>
-        {
+        {/* {
           JSON.stringify(categories)
-        }
+        } */}
         {
           categories.map((c, i) => {
             return (

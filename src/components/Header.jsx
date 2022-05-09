@@ -37,7 +37,7 @@ const Header = () => {
 
   return (
     <header className='header'>
-      <div className="logo">
+      <div className="logo" onClick={handleNavigate.bind({path: ""})}>
         <Avatar src="https://cdn.iconscout.com/icon/premium/png-256-thumb/emails-2414509-2031031.png" alt="" className="logo-img" />
         <h1 className="logo-h1">MailExplore</h1>
       </div>

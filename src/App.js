@@ -9,6 +9,8 @@ import SoloContentTemplate from "./pages/SoloContent.template";
 import Emailpage from "./pages/EmailPage";
 import SettingTemplate from "./pages/Setting.template";
 import { Categories, Users } from "./pages/settings";
+import NonavigationsTemplate from "./pages/NoNavigations.template";
+import HomePage from "./pages/HomePage";
 
 function App() {
 
@@ -17,7 +19,7 @@ function App() {
         <Header />
           {/* primary template like email lists - or single email */}
           <Routes>
-            <Route path="/" element={<MainTemplate><Emailpage /></MainTemplate>} />
+            <Route path="/" element={<NonavigationsTemplate><HomePage /></NonavigationsTemplate>} />
             <Route path="/email/:currentpage" element={<MainTemplate><Emailpage /></MainTemplate>} />
             <Route path="/settings" element={<SettingTemplate><Users /></SettingTemplate>} />
             <Route path="/settings/primary/categories" element={<SettingTemplate><Categories /></SettingTemplate>} />
@@ -28,11 +30,17 @@ function App() {
             <Route path="/settings/authetication/users" element={<SettingTemplate><Users /></SettingTemplate>} />
             <Route path="/settings/authetication/roles" element={<SettingTemplate><Users /></SettingTemplate>} />
             <Route path="/settings/authetication/users/new" element={<SettingTemplate><Users /></SettingTemplate>} />
+            <Route path="/app/*" element={<SoloContentTemplate>
+              <div style={{padding: "var(--p)", display: "flex", "justifyContent": "center", width: "100%"}}>
+                <h1>Current Application not implemented.</h1>
+              </div>
+            </SoloContentTemplate>} />
             <Route path="/*" element={<SoloContentTemplate>
               <div style={{padding: "var(--p)", display: "flex", "justifyContent": "center", width: "100%"}}>
                 <h1>Page not found | 404</h1>
               </div>
             </SoloContentTemplate>} />
+
           </Routes>
     </div>
   );

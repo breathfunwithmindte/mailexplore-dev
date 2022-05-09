@@ -1,0 +1,32 @@
+.homepage {
+  width: 97%;
+  padding: calc(var(--p) + var(--p));
+  display: flex;
+  flex-direction: column;
+}
+
+.homepage ul {
+  width: 100%;
+  border-top: 3.4px solid var(--bclr1);
+  max-height: 69vh;
+  overflow-y: auto;
+  padding: var(--p);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.homepage ul li {
+  height: fit-content;
+  padding: calc(var(--p) + var(--p));
+  border: 0.14px solid var(--bclr1);
+  display: flex;
+  flex-direction: column;
+
+}
+
+.homepage ul li:hover {
+  box-shadow: 0px 1px 6.9px 0.14px var(--s);
+}

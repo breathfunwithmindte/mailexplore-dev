@@ -3,12 +3,11 @@ import Navigation from "../components/Navigation";
 import RightNavigation from '../components/RightNavigation';
 
 
-const MainTemplate = ({children}) => {
+const NonavigationsTemplate = ({children}) => {
   
   return (
       <div className='App-page-wrapper'>
-        <Navigation />
-        <div className='default-page'>
+        <div className='default-page-nonavigations'>
           {children}
            <RightNavigation />
         </div>
@@ -16,4 +15,4 @@ const MainTemplate = ({children}) => {
   );
 }
 
-export default MainTemplate;
+export default NonavigationsTemplate;
